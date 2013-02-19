@@ -10,7 +10,7 @@
 
 @interface SNSnaprEffect : NSObject
 
-@property (nonatomic, retain) NSDictionary *configuration;
+@property (strong, nonatomic) NSDictionary *configuration;
 @property (nonatomic, readonly) NSString *displayName;
 @property (nonatomic, readonly) BOOL isLocked;
 @property (nonatomic, readonly) BOOL isHidden;

@@ -34,12 +34,11 @@
 @property (nonatomic, readonly) NSString *currentPage;
 
 /**
- Used for Camera+ Callbacks.
+ Used for Camera+ Callbacks, and Smart App Banners
  
  Forward your Application delegate's implementation of this method to this method.
  
- @param url the forwarded URL object
  */
-- (BOOL)handleOpenURL:(NSURL *)url;
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
 @end
