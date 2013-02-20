@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <SnaprKit/SNViewController.h>
+#import "SNViewController.h"
 
 extern NSString * const SNInvalidConfigurationException;
 
