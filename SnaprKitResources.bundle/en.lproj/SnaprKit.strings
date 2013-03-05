@@ -1,0 +1,27 @@
+/* 
+  SnaprKit.strings
+  SnaprKit
+
+  Created by Ryan Maxwell on 1/03/13.
+  Copyright (c) 2013 Cactuslab. All rights reserved.
+*/
+
+"ErrorAlertTitle" = "Error";
+"SaveOriginalToCameraRollAlertTitle" = "Save Snap";
+"SaveOriginalToCameraRollAlertMessage" = "Would you like to save the original to your camera roll?";
+
+"SaveButtonTitle" = "Save";
+"DontSaveButtonTitle" = "Don’t Save";
+"OKButtonTitle" = "OK";
+"CancelButtonTitle" = "Cancel";
+
+"LocationServicesDisabled" = "Please turn on Location Services in the Settings app.";
+"LocationServicesDenied" = "Please turn on Location Services for this app in the Settings.";
+
+"ALAssetsLibraryAccessUserDeniedError" = "Please enable Location Services in the Settings app to access photo library.";
+"ALAssetsLibraryAccessGloballyDeniedError" = "Access not allowed to photo Library";
+"ALAssetsLibraryDataUnavailableError" = "Photo library data unavailable";
+"ALAssetsLibraryUnknownError" = "Unknown Error";
+
+"ServerNotReachableErrorMessage" = "Server not reachable. The upload will automatically retry later.";
+"UploadNotSuccessfulErrorMessage" = "Upload was not successful. The upload will automatically retry later.";

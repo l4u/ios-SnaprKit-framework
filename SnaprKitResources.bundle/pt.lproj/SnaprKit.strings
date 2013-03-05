@@ -1,0 +1,27 @@
+/* 
+  SnaprKit.strings
+  SnaprKit
+
+  Created by Ryan Maxwell on 1/03/13.
+  Copyright (c) 2013 Cactuslab. All rights reserved.
+*/
+
+"ErrorAlertTitle" = "Erro";
+"SaveOriginalToCameraRollAlertTitle" = "Salvar Foto";
+"SaveOriginalToCameraRollAlertMessage" = "Gostaria de salvar a foto original no seu rolo da câmera?";
+
+"SaveButtonTitle" = "Salvar";
+"DontSaveButtonTitle" = "Não Salve";
+"OKButtonTitle" = "OK";
+"CancelButtonTitle" = "Cancelar";
+
+"LocationServicesDisabled" = "Por favor ligar os serviços de localização no app configurações.";
+"LocationServicesDenied" = "Por favor ligar os serviços de localização no app configurações.";
+
+"ALAssetsLibraryAccessUserDeniedError" = "Por favor, ligue os serviços de localização nas definições da app para ter acesso à fototeca.";
+"ALAssetsLibraryAccessGloballyDeniedError" = "Acesso à fototeca não é permitido";
+"ALAssetsLibraryDataUnavailableError" = "Rolo da câmera indisponível";
+"ALAssetsLibraryUnknownError" = "Erro Desconhecido";
+
+"ServerNotReachableErrorMessage" = "Servidor indisponível. O carregamento ira continuar automaticamente em breve.";
+"UploadNotSuccessfulErrorMessage" = "O carregamento falhou. O carregamento ira continuar automaticamente em breve.";
