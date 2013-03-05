@@ -26,10 +26,10 @@ pod 'SnaprKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework'
 * Drag the `SnaprKitResources.bundle` into your app's resources. Ensure it is included in your target's "Copy Bundle Resources" build phase.
 * The HTML views must be within a `SnaprKit.bundle` file in your app's resources.
 
-## Required Libraries:
+### Required Libraries:
 In your Target's Build Phases, link the Binary with the following Libraries:
 
-### Core SnaprKit Libraries:
+#### Core SnaprKit Libraries:
 * Foundation.framework
 * UIKit.framework
 * CFNetwork.framework
@@ -43,20 +43,20 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 * CoreLocation.framework
 * Security.framework
 
-### Additional Libraries for SnaprEffectsKit
+#### Additional Libraries for SnaprEffectsKit
 * CoreMedia.framework
 * CoreVideo.framework
 * AVFoundation.framework
 * OpenGLES.framework
 * QuartzCore.framework
 
-### If including Aviary:
+#### If including Aviary:
 * Accelerate.framework
 * StoreKit.framework
 * libsqlite3.dylib
 * CoreData.framework
 
-### Extra Build Settings:
+#### Extra Build Settings:
 * "Other linker flags"
   `-ObjC` `-all_load`
   
