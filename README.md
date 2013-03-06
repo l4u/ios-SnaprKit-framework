@@ -26,10 +26,10 @@ pod 'SnaprKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework'
 * Drag the `SnaprKitResources.bundle` into your app's resources. Ensure it is included in your target's "Copy Bundle Resources" build phase.
 * The HTML views must be within a `SnaprKit.bundle` file in your app's resources.
 
-### Required Libraries:
+### Required Libraries
 In your Target's Build Phases, link the Binary with the following Libraries:
 
-#### Core SnaprKit Libraries:
+#### Core SnaprKit.framework/SnaprEffectsKit.framework Libraries
 * Foundation.framework
 * UIKit.framework
 * CFNetwork.framework
@@ -43,12 +43,18 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 * CoreLocation.framework
 * Security.framework
 
-#### Additional Libraries for SnaprEffectsKit
+#### Additional Libraries for SnaprEffectsKit.framework
 * CoreMedia.framework
 * CoreVideo.framework
 * AVFoundation.framework
 * OpenGLES.framework
 * QuartzCore.framework
+
+#### Additional Libraries for FacebookSDK.framework
+(Set all 3 as 'Optional' instead of 'Required' if the target OS is < iOS6)
+* AdSupport.framework
+* Accounts.framework
+* Social.framework
 
 #### If including Aviary:
 * Accelerate.framework
@@ -57,8 +63,11 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 * CoreData.framework
 
 #### Extra Build Settings:
-* "Other linker flags"
-  `-ObjC` `-all_load`
+* "Other Linker Flags": `-ObjC`, `-all_load`
+* FacebookSDK "Other Linker Flags": `-lsqlite3.0`
+
+## FacebookSDK - v3.2
+TODO explain linking FacebookSDK.framework and app's main .plist URL schemes entry
   
 ## Resources
 
