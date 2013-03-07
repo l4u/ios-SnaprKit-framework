@@ -22,9 +22,12 @@ pod 'SnaprKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework'
 * Run `pod install`
 
 ## Manual Installation
+The following items only apply if you don't use the pod.
+
 * Drag the the framework into your project. Ensure you are linking against it in your target's build phase.
-* Drag the `SnaprKitResources.bundle` into your app's resources. Ensure it is included in your target's "Copy Bundle Resources" build phase.
-* The HTML views must be within a `SnaprKit.bundle` file in your app's resources.
+
+### FacebookSDK Dependency
+The project must be linked against the FacebookSDK.framework v3.2. This can be downloaded [here](https://developers.facebook.com/resources/facebook-ios-sdk-3.2.pkg).
 
 ### Required Libraries
 In your Target's Build Phases, link the Binary with the following Libraries:
@@ -65,12 +68,8 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 #### Extra Build Settings:
 * "Other Linker Flags": `-ObjC`, `-all_load`
 * FacebookSDK "Other Linker Flags": `-lsqlite3.0`
-
-## FacebookSDK - v3.2
-TODO explain linking FacebookSDK.framework and app's main .plist URL schemes entry
   
 ## Resources
-
 * You will need to copy `SnaprKitResources.bundle` into your project, and ensure it is included in your target's "Copy Bundle Resources" build phase.
 * You will need a `SnaprKit.bundle` in your project, which includes the project's HTML.
 
