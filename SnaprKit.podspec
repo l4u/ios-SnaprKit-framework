@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
   s.public_header_files = 'SnaprKit.framework/Headers'
   s.preserve_paths = 'SnaprKit.framework'
   
+  s.dependency = 'Facebook-iOS-SDK', '3.2'
+  
   s.xcconfig =  { 
     'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SnaprKit"',
     'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"'
