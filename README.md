@@ -73,6 +73,19 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 * You will need to copy `SnaprKitResources.bundle` into your project, and ensure it is included in your target's "Copy Bundle Resources" build phase.
 * You will need a `SnaprKit.bundle` in your project, which includes the project's HTML.
 
+## Facebook Integration Configuration
+
+In the app's main Info.plist, you will need to add two values which include the Facebook App ID.
+
+| Key | Type | Value |
+| FacebookAppID | String | e.g. "151738444987320" |
+| URL Types | Array | URL Types Child Item |
+| URL Types Child Item | Dictionary | URL Schemes Child Array |
+| URL Schemes Child Array | Array | URL Scheme Child Item |
+| URL Scheme Child Item | String | "fb" + App ID, e.g fb151738444987320 |
+
+![Info.plist Config](https://raw.github.com/snapr/ios-SnaprKit-framework/master/Screenshots/InfoPlist.png)
+
 ## Usage:
 Import the main header:
 ```#import <SnaprKit/SnaprKit.h>``` or ```#import <SnaprEffectsKit/SnaprEffectsKit.h>```
