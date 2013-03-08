@@ -25,9 +25,7 @@ pod 'SnaprKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework'
 The following items only apply if you don't use the pod.
 
 * Drag the the framework into your project. Ensure you are linking against it in your target's build phase.
-
-### FacebookSDK Dependency
-The project must be linked against the FacebookSDK.framework v3.2. This can be downloaded [here](https://developers.facebook.com/resources/facebook-ios-sdk-3.2.pkg).
+* The project must be linked against the FacebookSDK.framework v3.2. This can be downloaded [here](https://developers.facebook.com/resources/facebook-ios-sdk-3.2.pkg).
 
 ### Required Libraries
 In your Target's Build Phases, link the Binary with the following Libraries:
