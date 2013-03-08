@@ -78,6 +78,7 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 In the app's main Info.plist, you will need to add two values which include the Facebook App ID.
 
 | Key | Type | Value |
+| --- | ---- | ------|
 | FacebookAppID | String | e.g. "151738444987320" |
 | URL Types | Array | URL Types Child Item |
 | URL Types Child Item | Dictionary | URL Schemes Child Array |
