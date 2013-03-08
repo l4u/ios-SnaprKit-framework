@@ -34,11 +34,29 @@
 @property (nonatomic, readonly) NSString *currentPage;
 
 /**
- Used for Camera+ Callbacks, and Smart App Banners
+ Used for Camera+ Callbacks, Facebook login callbacks, and Smart App Banners
  
- Forward your Application delegate's implementation of this method to this method.
+ Forward the URL object in your Application delegate's `- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url` or `- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation`
  
  */
 - (BOOL)handleOpenURL:(NSURL *)url;
+
+
+/**
+ Used for Facebook SDK callback cleanup
+ 
+ Call this method from within your Application Delegate's `- (void)applicationDidBecomeActive:(UIApplication *)application` method
+ 
+ */
+- (void)handleDidBecomeActive;
+
+
+/** 
+ Used for Facebook SDK session closing 
+ 
+ Call this method from within your Application Delegate's `- (void)applicationWillTerminate:(UIApplication *)application` method
+ 
+ */
+- (void)handleWillTerminate;
 
 @end
