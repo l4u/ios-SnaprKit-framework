@@ -85,7 +85,9 @@ In the app's main Info.plist, you will need to add two values which include the 
 | URL Schemes Child Array | Array | URL Scheme Child Item |
 | URL Scheme Child Item | String | "fb" + App ID, e.g fb151738444987320 |
 
-![Info.plist Config](https://raw.github.com/snapr/ios-SnaprKit-framework/master/Screenshots/InfoPlist.png)
+![FacebookAppID Config](https://raw.github.com/snapr/ios-SnaprKit-framework/master/Screenshots/FacebookAppID.png)
+
+![URL Types Config](https://raw.github.com/snapr/ios-SnaprKit-framework/master/Screenshots/URLTypes.png)
 
 ## Usage:
 Import the main header:
