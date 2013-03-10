@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'SnaprEffectsKit.framework/Headers'
   s.preserve_paths = 'SnaprEffectsKit.framework'
   
-  s.dependency = 'Facebook-iOS-SDK', '3.2'
+  s.dependency   'Facebook-iOS-SDK', '3.2'
   
   s.xcconfig =  { 
     'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SnaprEffectsKit"',
