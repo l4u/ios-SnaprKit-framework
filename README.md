@@ -11,12 +11,12 @@ There are 2 frameworks:
 
 ## Installation via Cocoapods
 
-* Create a `Podfile` at the root of your project, and reference either the `SnaprKit` or `SnaprEffects` pod at the git URL.
+* Create a `Podfile` at the root of your project, and reference either the `SnaprKit` or `SnaprEffects` pod at the git URL, and the appropriate commit hash.
 
 ```ruby
 platform :ios, '5.0'
 
-pod 'SnaprKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework'
+pod 'SnaprEffectsKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework', :commit => '8143763efc1b103742dc51451c2798d12f93693e'
 ```
 
 * Run `pod install`
