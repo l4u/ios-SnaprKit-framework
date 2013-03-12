@@ -122,16 +122,17 @@ If you have any links/javascript in your bundle that requests ```snaprkit-parent
 ## Configuration Options
 To customize the default behavior, create a file named `SnaprKit.plist` in your project, and override any of the below keys:
 
-| Key                           | Type               | Default            | Description
-|-------------------------------|--------------------|--------------------| --------------------| 
-| DevMode                       | Boolean            | YES                | Dev or Live server |
-| DebugLogging                  | Boolean            | NO                 | Log activity to console |
-| ShowLoadingSpinner            | Boolean            | YES                | Initial loading spinner before HTML render |
-| CropImagesAspectRatio         | Number             | 0 = No Cropping    | 1 = Square |
-| JPEGQuality                   | Number             | 0.8                | Number between 0 and 1 |
-| MaximumDimensionOfImage       | Number             | 0 = No Resizing    | The size in pixels of the the larger of either the width or height |
-| IgnoreModalWebViewOnDomains   | Array              |                    | Assign an array of domain strings to whitelist to this property. |
-| BadgeApplicationIcon          | Boolean            | YES                |  Show pending upload count as app badge |
+| Key                           | Type         | Default            | Description
+|-------------------------------|--------------|--------------------| --------------------| 
+| DevMode                       | Boolean      | YES                | Dev or Live server |
+| DebugLogging                  | Boolean      | NO                 | Log activity to console |
+| ShowLoadingSpinner            | Boolean      | YES                | Initial loading spinner before HTML render |
+| CropImagesAspectRatio         | Number       | 0 = No Cropping    | 1 = Square |
+| JPEGQuality                   | Number       | 0.8                | Number between 0 and 1 |
+| MaximumDimensionOfImage       | Number       | 0 = No Resizing    | The size in pixels of the the larger of either the width or height |
+| IgnoreModalWebViewOnDomains   | Array        |                    | Assign an array of domain strings to whitelist to this property. |
+| BadgeApplicationIcon          | Boolean      | YES                | Show pending upload count as app badge |
+| ShowFiltersFirstInEffectsView | Boolean      | YES                | Show filters before stickers in effects view |
 
 ## Image Overrides
 Replace any of the images in `SnaprKitResources.bundle` with new files.
@@ -145,33 +146,33 @@ To use Image Effects, you must also include the "ImageEffects.framework" within 
 ##### Locked effects
 You can set the effects configuration dictionary in SnaprKit.plist. The dictionary keys follow the same form as the query parameters above. eg. @{ @"PinkDreamerEffect.locked": @"Locked message here" }
 
-| Key                           | Type               | Default            | Description
-|-------------------------------|--------------------|--------------------| --------------------| 
-| ShowEffectsView | Boolean | NO | |
-| EffectConstants | Array | | Effect Strings |
-| EffectsConfiguration | Dictionary | | |
+| Key                           | Type         | Default            | Description
+|-------------------------------|--------------|--------------------| --------------------| 
+| ShowEffectsView               | Boolean      | NO                 | |
+| EffectConstants               | Array        |                    | Effect Strings |
+| EffectsConfiguration          | Dictionary   |                    | |
 
 In order to show the locked overlay image on the image preview area and effect button you need to add LockedEffectImage.png and LockedEffectButtonImage.png to your project (@2x versions also required of course).
 
 #### Optional External components
 Whether the Camera+ API, and/or the Aviary Effects SDK is included with your project, and you want to provide access to them.
 
-| Key                           | Type               | Default            | Description
-|-------------------------------|--------------------|--------------------| --------------------| 
-| AviarySDKAvailable            | Boolean            | NO                 | |
-| CameraPlusAPIAvailable        | Boolean            | NO                 | |
-| CameraPlusCallbackURLScheme   | String             | App's Bundle ID    | Used when returning from Camera+ |
+| Key                           | Type         | Default            | Description
+|-------------------------------|--------------|--------------------| --------------------| 
+| AviarySDKAvailable            | Boolean      | NO                 | |
+| CameraPlusAPIAvailable        | Boolean      | NO                 | |
+| CameraPlusCallbackURLScheme   | String       | App's Bundle ID    | Used when returning from Camera+ |
 
 ## Web View Configuration Options
 
 The following properties of UIWebView can be configured in `SnaprKit.plist`
 
-| Key                           | Type               | Default            | Description
-|-------------------------------|--------------------|--------------------| --------------------| 
-| WebViewBounce | Boolean | NO | Whether the webview's scrollview bounces |
-| WebViewDetectDataTypesKey | Boolean | NO | Detect phone/address/calendar events in webview |
-| WebViewSuppressesIncrementalRendering | Boolean | NO | Controls the suppressesIncrementalRendering property of UIWebView if available |
-| WebViewScalesPagesToFitKey | Boolean | NO | Controls the scalesPageToFit property of UIWebView |
+| Key                           | Type         | Default            | Description
+|-------------------------------|--------------|--------------------| --------------------| 
+| WebViewBounce                 | Boolean      | NO                 | Whether the webview's scrollview bounces |
+| WebViewDetectDataTypes        | Boolean      | NO                 | Detect phone/address/calendar events in webview |
+| WebViewSuppressesIncrementalRendering | Boolean | NO              | Controls the suppressesIncrementalRendering property of UIWebView if available |
+| WebViewScalesPagesToFit       | Boolean      | NO                 | Controls the scalesPageToFit property of UIWebView |
 
 #### Loading Web Content
 The methods below are defined on SNViewController, and are related to the web view.
