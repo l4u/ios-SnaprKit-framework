@@ -127,7 +127,7 @@ To customize the default behavior, create a file named `SnaprKit.plist` in your 
 | DevMode                       | Boolean      | YES                | Dev or Live server |
 | DebugLogging                  | Boolean      | NO                 | Log activity to console |
 | ShowLoadingSpinner            | Boolean      | YES                | Initial loading spinner before HTML render |
-| CropImagesAspectRatio         | Number       | 0 = No Cropping    | 1 = Square |
+| CropImagesAspectRatio         | Number       | 0 = No Cropping    | 1 = Square; 0.75 = 4:3 |
 | JPEGQuality                   | Number       | 0.8                | Number between 0 and 1 |
 | MaximumDimensionOfImage       | Number       | 0 = No Resizing    | The size in pixels of the the larger of either the width or height |
 | IgnoreModalWebViewOnDomains   | Array        |                    | Assign an array of domain strings to whitelist to this property. |
