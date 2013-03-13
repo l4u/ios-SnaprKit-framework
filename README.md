@@ -140,20 +140,6 @@ Replace any of the images in `SnaprKitResources.bundle` with new files.
 ## String Overrides
 Override any values in the localized `SnaprKit.strings` files, e.g English strings are at `SnaprKitResources.bundle/en.lproj/SnaprKit.strings`
 
-#### Image Effects View (Deprecated in favour of using SnaprEffectsKit library)
-To use Image Effects, you must also include the "ImageEffects.framework" within your project's "Frameworks". Also include a .h/.m file containing the Effect Strings, as well as the Effect Implementations. Any Effect Resources must also be contained within your project's resources.
-
-##### Locked effects
-You can set the effects configuration dictionary in SnaprKit.plist. The dictionary keys follow the same form as the query parameters above. eg. @{ @"PinkDreamerEffect.locked": @"Locked message here" }
-
-| Key                           | Type         | Default            | Description
-|-------------------------------|--------------|--------------------| --------------------| 
-| ShowEffectsView               | Boolean      | NO                 | |
-| EffectConstants               | Array        |                    | Effect Strings |
-| EffectsConfiguration          | Dictionary   |                    | |
-
-In order to show the locked overlay image on the image preview area and effect button you need to add LockedEffectImage.png and LockedEffectButtonImage.png to your project (@2x versions also required of course).
-
 #### Optional External components
 Whether the Camera+ API, and/or the Aviary Effects SDK is included with your project, and you want to provide access to them.
 
