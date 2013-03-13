@@ -14,8 +14,6 @@
 
 /**
  Reloads the web view.
- 
- For example once user credentials have been set using `[SnaprKit setUsername:accessToken:]`
  */
 - (void)reloadPage;
 
@@ -35,6 +33,8 @@
 
 /**
  Used for Camera+ Callbacks, Facebook login callbacks, and Smart App Banners
+ 
+ @param url the URL parameter to forward
  
  Forward the URL object in your Application delegate's `- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url` or `- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation`
  
