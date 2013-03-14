@@ -9,7 +9,7 @@ There are 2 frameworks:
 * `SnaprKit.framework` – This just includes the core app for uploading images to Snapr
 * `SnaprEffectsKit.framework` – This includes the core app plus the filter/sticker effects view.
 
-## Installation via Cocoapods
+## Cocoapods SnaprKit Installation
 
 * Create a `Podfile` at the root of your project, and reference either the `SnaprKit` or `SnaprEffects` pod at the git URL, and the appropriate commit hash.
 
@@ -21,11 +21,10 @@ pod 'SnaprEffectsKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework'
 
 * Run `pod install`
 
-## Manual Installation
+## Manual SnaprKit Installation
 The following items only apply if you don't use the pod.
 
 * Drag the the framework into your project. Ensure you are linking against it in your target's build phase.
-* The project must be linked against the FacebookSDK.framework v3.2. This can be downloaded [here](https://developers.facebook.com/resources/facebook-ios-sdk-3.2.pkg).
 
 ### Required Libraries
 In your Target's Build Phases, link the Binary with the following Libraries:
@@ -51,12 +50,6 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 * OpenGLES.framework
 * QuartzCore.framework
 
-#### Additional Libraries for FacebookSDK.framework
-(Set all 3 as 'Optional' instead of 'Required' if the target OS is < iOS6)
-* AdSupport.framework
-* Accounts.framework
-* Social.framework
-
 #### If including Aviary:
 * Accelerate.framework
 * StoreKit.framework
@@ -65,14 +58,26 @@ In your Target's Build Phases, link the Binary with the following Libraries:
 
 #### Extra Build Settings:
 * "Other Linker Flags": `-ObjC`, `-all_load`
-* FacebookSDK "Other Linker Flags": `-lsqlite3.0`
   
 ## Resources
 * You will need to copy `SnaprKitResources.bundle` into your project, and ensure it is included in your target's "Copy Bundle Resources" build phase.
 * You will need a `SnaprKit.bundle` in your project, which includes the project's HTML.
 
-## Facebook Integration Configuration
+## Facebook Integration
+Native Facebook integration is optional. SnaprKit will determine if if the Facebook SDK is available and configured at runtime, and use it if possible. It will fall back to an in-app auth flow if not present.
 
+The project supports FacebookSDK.framework v3.2. 
+### Manual Facebook SDK Installation
+* Download from [here](https://developers.facebook.com/resources/facebook-ios-sdk-3.2.pkg)
+* Follow the project configuration guide [here](https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/)
+
+### Cocoapods Facebook SDK Installation
+
+```ruby
+	pod 'Facebook-iOS-SDK', '3.2'
+```
+
+### Facebook Integration Configuration
 In the app's main Info.plist, you will need to add two values which include the Facebook App ID.
 
 | Key | Type | Value |
@@ -145,8 +150,6 @@ Whether the Camera+ API, and/or the Aviary Effects SDK is included with your pro
 
 | Key                           | Type         | Default            | Description
 |-------------------------------|--------------|--------------------| --------------------| 
-| AviarySDKAvailable            | Boolean      | NO                 | |
-| CameraPlusAPIAvailable        | Boolean      | NO                 | |
 | CameraPlusCallbackURLScheme   | String       | App's Bundle ID    | Used when returning from Camera+ |
 
 ## Web View Configuration Options
