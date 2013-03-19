@@ -160,7 +160,7 @@ The following properties of UIWebView can be configured in `SnaprKit.plist`
 |-------------------------------|--------------|--------------------| --------------------| 
 | WebViewBounce                 | Boolean      | NO                 | Whether the webview's scrollview bounces |
 | WebViewDetectDataTypes        | Boolean      | NO                 | Detect phone/address/calendar events in webview |
-| WebViewSuppressesIncrementalRendering | Boolean | NO              | Controls the suppressesIncrementalRendering property of UIWebView if available |
+| WebViewSuppressesIncrementalRendering | Boolean | YES             | Controls the suppressesIncrementalRendering property of UIWebView if available |
 | WebViewScalesPagesToFit       | Boolean      | NO                 | Controls the scalesPageToFit property of UIWebView |
 
 #### Loading Web Content
