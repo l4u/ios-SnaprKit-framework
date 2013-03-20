@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'SnaprKit'
   s.version      = '3.0'
   s.summary      = 'Pod for easily integrating SnaprKit into your iOS app'
-  s.homepage     = 'https://github.com/Snapr/ios-SnaprKit'
+  s.homepage     = 'https://github.com/Snapr/ios-SnaprKit-framework'
   s.source       = { 
     :git => 'https://github.com/Snapr/ios-SnaprKit-framework.git'
   }
