@@ -175,3 +175,6 @@ Call this method to link directly to a page within the bundle from your native c
 - (void)reloadPage
 ```
 Not generally needed, but maybe in a situation where you modify properties on the SnaprKitConfig instance (e.g User Credentials) and then need to reload what page is showing.
+
+### Class Documentation
+An Xcode docset should be automatically installed if you install SnaprKit from the pod. You can also view the class documentation online [here](http://snapr.github.com/ios-SnaprKit-framework/)
