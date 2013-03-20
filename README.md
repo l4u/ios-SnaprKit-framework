@@ -7,16 +7,16 @@ SnaprKit iOS framework
 There are 2 frameworks:
 
 * `SnaprKit.framework` – This just includes the core app for uploading images to Snapr
-* `SnaprEffectsKit.framework` – This includes the core app plus the filter/sticker effects view.
+* `SnaprKitFX.framework` – This includes the core app plus the filter/sticker effects view.
 
 ## Cocoapods SnaprKit Installation
 
-* Create a `Podfile` at the root of your project, and reference either the `SnaprKit` or `SnaprEffects` pod at the git URL, and the appropriate commit hash.
+* Create a `Podfile` at the root of your project, and reference either the `SnaprKit` or `SnaprKitFX` pod at the git URL, and the appropriate commit hash.
 
 ```ruby
 platform :ios, '5.0'
 
-pod 'SnaprEffectsKit', :git => 'https://github.com/Snapr/ios-SnaprKit-framework', :commit => '8143763efc1b103742dc51451c2798d12f93693e'
+pod 'SnaprKitFX', :git => 'https://github.com/Snapr/ios-SnaprKit-framework', :commit => 'bb28ba8164e3695ec0a5a2e9ac0b77c04cefc993'
 ```
 
 * Run `pod install`
@@ -61,7 +61,7 @@ In your Target's Build Phases, link the Binary with the following Libraries:
   
 ## Resources
 * You will need to copy `SnaprKitResources.bundle` into your project, and ensure it is included in your target's "Copy Bundle Resources" build phase.
-* You will need a `SnaprKit.bundle` in your project, which includes the project's HTML.
+* You will need a `SnaprKitHTML.bundle` in your project, which includes the project's HTML.
 
 ## Facebook Integration
 Native Facebook integration is optional. SnaprKit will determine if if the Facebook SDK is available and configured at runtime, and use it if possible. It will fall back to an in-app auth flow if not present.
@@ -94,7 +94,7 @@ In the app's main Info.plist, you will need to add two values which include the 
 
 ## Usage:
 Import the main header:
-```#import <SnaprKit/SnaprKit.h>``` or ```#import <SnaprEffectsKit/SnaprEffectsKit.h>```
+```#import <SnaprKit/SnaprKit.h>``` or ```#import <SnaprKitFX/SnaprKitFX.h>```
 
 ##### In your application delegate:
 If you are making use of the Camera+ Integration API, you will need to forward your application delegate's ```application:handleOpenURL:``` or ```application:openURL:sourceApplication:annotation:``` method to the Snapr view controller instance. e.g. 
