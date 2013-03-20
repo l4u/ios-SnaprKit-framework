@@ -36,6 +36,52 @@ extern NSString * const SNInvalidConfigurationException;
  */
 - (void)clearUsernameAndAccessToken;
 
+/**
+ For setting a single filter's settings
+ 
+ @param settings        a dictionary with `@{@"key": @"value"}` structure
+ @param filterSlug      the filter slug
+ @param packSlug        the filter pack slug
+ */
+- (void)setFilterSettings:(NSDictionary *)settings forFilter:(NSString *)filterSlug inPack:(NSString *)packSlug;
+
+
+/**
+ For setting a single sticker's settings
+ 
+ @param settings        a dictionary with `@{@"key": @"value"}` structure
+ @param stickerSlug     the sticker slug
+ @param packSlug        the sticker pack slug
+ */
+- (void)setStickerSettings:(NSDictionary *)settings forSticker:(NSString *)stickerSlug inPack:(NSString *)packSlug;
+
+/**
+ For setting all filter settings at once
+ 
+ @param combinedSettings      a dictionary with the following structure
+ 
+    @{
+        @"pack-slug.filter-slug.setting_key": @"setting_value",
+        @"pack-slug2.filter-slug2.setting_key2": @"setting_value"
+     }
+ 
+ e.g. 
+  
+    @{
+        @"pink.summer.locked": @YES,
+        @"pink.summer.unlock_message": @"You need 1,000 PINK points to unlock this filter. Play games to earn your points!"
+     }
+ 
+ @warning booleans in the dictionary must be objC objects rather than strings. e.g. use @YES rather than @"true".
+ 
+ */
+- (void)setFilterSettings:(NSDictionary *)combinedSettings;
+
+/**
+ @param combinedSettings    a dictionary following the same structure as the filter settings
+ */
+- (void)setStickerSettings:(NSDictionary *)combinedSettings;
+
 @end
 
 
