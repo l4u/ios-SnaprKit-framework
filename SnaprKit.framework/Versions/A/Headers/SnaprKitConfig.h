@@ -36,6 +36,8 @@ extern NSString * const SNInvalidConfigurationException;
  */
 - (void)clearUsernameAndAccessToken;
 
+#if SNAPR_EFFECTS
+
 /**
  For setting a single filter's settings
  
@@ -43,8 +45,17 @@ extern NSString * const SNInvalidConfigurationException;
  @param filterSlug      the filter slug
  @param packSlug        the filter pack slug
  */
-- (void)setFilterSettings:(NSDictionary *)settings forFilter:(NSString *)filterSlug inPack:(NSString *)packSlug;
+- (void)setSettings:(NSDictionary *)settings forFilter:(NSString *)filterSlug inPack:(NSString *)packSlug;
 
+/**
+ Retrieve the current settings of a filter
+ 
+ @param filterSlug      the filter slug
+ @param packSlug        the filter pack slug
+ 
+ @return a dictionary of the current settings
+ */
+- (NSDictionary *)settingsForFilter:(NSString *)filterSlug inPack:(NSString *)packSlug;
 
 /**
  For setting a single sticker's settings
@@ -53,7 +64,18 @@ extern NSString * const SNInvalidConfigurationException;
  @param stickerSlug     the sticker slug
  @param packSlug        the sticker pack slug
  */
-- (void)setStickerSettings:(NSDictionary *)settings forSticker:(NSString *)stickerSlug inPack:(NSString *)packSlug;
+- (void)setSettings:(NSDictionary *)settings forSticker:(NSString *)stickerSlug inPack:(NSString *)packSlug;
+
+
+/**
+ Retrieve the current settings of a sticker
+ 
+ @param stickerSlug     the sticker slug
+ @param packSlug        the sticker pack slug
+ 
+ @return a dictionary of the current settings
+ */
+- (NSDictionary *)settingsForSticker:(NSString *)stickerSlug inPack:(NSString *)packSlug;
 
 /**
  For setting all filter settings at once
@@ -81,6 +103,8 @@ extern NSString * const SNInvalidConfigurationException;
  @param combinedSettings    a dictionary following the same structure as the filter settings
  */
 - (void)setStickerSettings:(NSDictionary *)combinedSettings;
+
+#endif
 
 @end
 

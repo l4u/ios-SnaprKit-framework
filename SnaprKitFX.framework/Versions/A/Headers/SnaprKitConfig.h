@@ -36,6 +36,8 @@ extern NSString * const SNInvalidConfigurationException;
  */
 - (void)clearUsernameAndAccessToken;
 
+#if SNAPR_EFFECTS
+
 /**
  For setting a single filter's settings
  
@@ -101,6 +103,8 @@ extern NSString * const SNInvalidConfigurationException;
  @param combinedSettings    a dictionary following the same structure as the filter settings
  */
 - (void)setStickerSettings:(NSDictionary *)combinedSettings;
+
+#endif
 
 @end
 
