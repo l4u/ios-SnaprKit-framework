@@ -36,7 +36,7 @@ extern NSString * const SNInvalidConfigurationException;
  */
 - (void)clearUsernameAndAccessToken;
 
-#if SNAPR_EFFECTS
+#if SNAPRKIT_FX
 
 /**
  For setting a single filter's settings

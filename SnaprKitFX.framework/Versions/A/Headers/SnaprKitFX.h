@@ -8,5 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#define SNAPRKIT_FX 1
+
 #import <SnaprKitFX/SnaprKitConfig.h>
 #import <SnaprKitFX/SNViewController.h>
