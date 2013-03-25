@@ -61,6 +61,10 @@
 	
 	<option value="//api/name/setUsername:accessToken:">&nbsp;&nbsp;&nbsp;&nbsp;- setUsername:accessToken:</option>
 	
+	<option value="//api/name/settingsForFilter:inPack:">&nbsp;&nbsp;&nbsp;&nbsp;- settingsForFilter:inPack:</option>
+	
+	<option value="//api/name/settingsForSticker:inPack:">&nbsp;&nbsp;&nbsp;&nbsp;- settingsForSticker:inPack:</option>
+	
 	
 	
 </select>
@@ -106,6 +110,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStickerSettings:">setStickerSettings:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUsername:accessToken:">setUsername:accessToken:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/settingsForFilter:inPack:">settingsForFilter:inPack:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/settingsForSticker:inPack:">settingsForSticker:inPack:</a></span></li>
 	
 </ul></li>
 
@@ -190,8 +198,22 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/settingsForFilter:inPack:">&ndash;&nbsp;settingsForFilter:inPack:</a></code>
+		<span class="tooltip"><p>Retrieve the current settings of a filter</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/setSettings:forSticker:inPack:">&ndash;&nbsp;setSettings:forSticker:inPack:</a></code>
 		<span class="tooltip"><p>For setting a single sticker&rsquo;s settings</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/settingsForSticker:inPack:">&ndash;&nbsp;settingsForSticker:inPack:</a></code>
+		<span class="tooltip"><p>Retrieve the current settings of a sticker</p></span>
 	</span>
 	
 	
@@ -587,6 +609,128 @@
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Explicitly set the Snapr credentials that will be used, if you have acquired them from the user or elsewhere (stored in User Defaults).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SnaprKitConfig.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/settingsForFilter:inPack:" title="settingsForFilter:inPack:"></a>
+	<h3 class="subsubtitle method-title">settingsForFilter:inPack:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve the current settings of a filter</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)settingsForFilter:(NSString *)<em>filterSlug</em> inPack:(NSString *)<em>packSlug</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filterSlug</em></dt>
+			<dd><p>the filter slug</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>packSlug</em></dt>
+			<dd><p>the filter pack slug</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a dictionary of the current settings</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieve the current settings of a filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SnaprKitConfig.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/settingsForSticker:inPack:" title="settingsForSticker:inPack:"></a>
+	<h3 class="subsubtitle method-title">settingsForSticker:inPack:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve the current settings of a sticker</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)settingsForSticker:(NSString *)<em>stickerSlug</em> inPack:(NSString *)<em>packSlug</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stickerSlug</em></dt>
+			<dd><p>the sticker slug</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>packSlug</em></dt>
+			<dd><p>the sticker pack slug</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a dictionary of the current settings</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieve the current settings of a sticker</p>
 	</div>
 	
 	
