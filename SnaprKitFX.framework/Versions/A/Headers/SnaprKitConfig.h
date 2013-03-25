@@ -43,7 +43,9 @@ extern NSString * const SNInvalidConfigurationException;
  @param filterSlug      the filter slug
  @param packSlug        the filter pack slug
  */
-- (void)setFilterSettings:(NSDictionary *)settings forFilter:(NSString *)filterSlug inPack:(NSString *)packSlug;
+- (void)setSettings:(NSDictionary *)settings forFilter:(NSString *)filterSlug inPack:(NSString *)packSlug;
+
+- (NSDictionary *)settingsForFilter:(NSString *)filterSlug inPack:(NSString *)packSlug;
 
 
 /**
@@ -53,7 +55,9 @@ extern NSString * const SNInvalidConfigurationException;
  @param stickerSlug     the sticker slug
  @param packSlug        the sticker pack slug
  */
-- (void)setStickerSettings:(NSDictionary *)settings forSticker:(NSString *)stickerSlug inPack:(NSString *)packSlug;
+- (void)setSettings:(NSDictionary *)settings forSticker:(NSString *)stickerSlug inPack:(NSString *)packSlug;
+
+- (NSDictionary *)settingsForSticker:(NSString *)stickerSlug inPack:(NSString *)packSlug;
 
 /**
  For setting all filter settings at once
