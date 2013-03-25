@@ -53,11 +53,11 @@
 	
 	<option value="//api/name/setFilterSettings:">&nbsp;&nbsp;&nbsp;&nbsp;- setFilterSettings:</option>
 	
-	<option value="//api/name/setFilterSettings:forFilter:inPack:">&nbsp;&nbsp;&nbsp;&nbsp;- setFilterSettings:forFilter:inPack:</option>
+	<option value="//api/name/setSettings:forFilter:inPack:">&nbsp;&nbsp;&nbsp;&nbsp;- setSettings:forFilter:inPack:</option>
+	
+	<option value="//api/name/setSettings:forSticker:inPack:">&nbsp;&nbsp;&nbsp;&nbsp;- setSettings:forSticker:inPack:</option>
 	
 	<option value="//api/name/setStickerSettings:">&nbsp;&nbsp;&nbsp;&nbsp;- setStickerSettings:</option>
-	
-	<option value="//api/name/setStickerSettings:forSticker:inPack:">&nbsp;&nbsp;&nbsp;&nbsp;- setStickerSettings:forSticker:inPack:</option>
 	
 	<option value="//api/name/setUsername:accessToken:">&nbsp;&nbsp;&nbsp;&nbsp;- setUsername:accessToken:</option>
 	
@@ -99,11 +99,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFilterSettings:">setFilterSettings:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFilterSettings:forFilter:inPack:">setFilterSettings:forFilter:inPack:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSettings:forFilter:inPack:">setSettings:forFilter:inPack:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSettings:forSticker:inPack:">setSettings:forSticker:inPack:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStickerSettings:">setStickerSettings:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStickerSettings:forSticker:inPack:">setStickerSettings:forSticker:inPack:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUsername:accessToken:">setUsername:accessToken:</a></span></li>
 	
@@ -183,14 +183,14 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setFilterSettings:forFilter:inPack:">&ndash;&nbsp;setFilterSettings:forFilter:inPack:</a></code>
+		<code><a href="#//api/name/setSettings:forFilter:inPack:">&ndash;&nbsp;setSettings:forFilter:inPack:</a></code>
 		<span class="tooltip"><p>For setting a single filter&rsquo;s settings</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setStickerSettings:forSticker:inPack:">&ndash;&nbsp;setStickerSettings:forSticker:inPack:</a></code>
+		<code><a href="#//api/name/setSettings:forSticker:inPack:">&ndash;&nbsp;setSettings:forSticker:inPack:</a></code>
 		<span class="tooltip"><p>For setting a single sticker&rsquo;s settings</p></span>
 	</span>
 	
@@ -380,8 +380,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setFilterSettings:forFilter:inPack:" title="setFilterSettings:forFilter:inPack:"></a>
-	<h3 class="subsubtitle method-title">setFilterSettings:forFilter:inPack:</h3>
+	<a name="//api/name/setSettings:forFilter:inPack:" title="setSettings:forFilter:inPack:"></a>
+	<h3 class="subsubtitle method-title">setSettings:forFilter:inPack:</h3>
 	
 	
 	
@@ -391,7 +391,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setFilterSettings:(NSDictionary *)<em>settings</em> forFilter:(NSString *)<em>filterSlug</em> inPack:(NSString *)<em>packSlug</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setSettings:(NSDictionary *)<em>settings</em> forFilter:(NSString *)<em>filterSlug</em> inPack:(NSString *)<em>packSlug</em></code></div>
 
     
 	
@@ -441,54 +441,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setStickerSettings:" title="setStickerSettings:"></a>
-	<h3 class="subsubtitle method-title">setStickerSettings:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>a dictionary following the same structure as the filter settings</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)setStickerSettings:(NSDictionary *)<em>combinedSettings</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>combinedSettings</em></dt>
-			<dd><p>a dictionary following the same structure as the filter settings</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">SnaprKitConfig.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setStickerSettings:forSticker:inPack:" title="setStickerSettings:forSticker:inPack:"></a>
-	<h3 class="subsubtitle method-title">setStickerSettings:forSticker:inPack:</h3>
+	<a name="//api/name/setSettings:forSticker:inPack:" title="setSettings:forSticker:inPack:"></a>
+	<h3 class="subsubtitle method-title">setSettings:forSticker:inPack:</h3>
 	
 	
 	
@@ -498,7 +452,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setStickerSettings:(NSDictionary *)<em>settings</em> forSticker:(NSString *)<em>stickerSlug</em> inPack:(NSString *)<em>packSlug</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setSettings:(NSDictionary *)<em>settings</em> forSticker:(NSString *)<em>stickerSlug</em> inPack:(NSString *)<em>packSlug</em></code></div>
 
     
 	
@@ -532,6 +486,52 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>For setting a single sticker&rsquo;s settings</p>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SnaprKitConfig.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStickerSettings:" title="setStickerSettings:"></a>
+	<h3 class="subsubtitle method-title">setStickerSettings:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>a dictionary following the same structure as the filter settings</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setStickerSettings:(NSDictionary *)<em>combinedSettings</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>combinedSettings</em></dt>
+			<dd><p>a dictionary following the same structure as the filter settings</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -616,7 +616,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Snapr. All rights reserved. (Last updated: 2013-03-20)</span><br />
+						<p><span class="copyright">&copy; 2013 Snapr. All rights reserved. (Last updated: 2013-03-26)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
