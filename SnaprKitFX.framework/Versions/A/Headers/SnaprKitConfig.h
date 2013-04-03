@@ -28,13 +28,28 @@ extern NSString * const SNInvalidConfigurationException;
  
  @param username        Snapr username
  @param accessToken     Snapr API Access Token
+ 
+ @deprecated            Use `setUsername:displayUsername:accessToken` instead
  */
-- (void)setUsername:(NSString *)username accessToken:(NSString *)accessToken;
+- (void)setUsername:(NSString *)username accessToken:(NSString *)accessToken DEPRECATED_ATTRIBUTE;
+
+/**
+ Explicitly set the Snapr credentials that will be used, if you have acquired them from the user or elsewhere (stored in User Defaults).
+ 
+ @param username        Snapr username
+ @param displayUsername Snapr display username
+ @param accessToken     Snapr API Access Token
+ */
+- (void)setUsername:(NSString *)username displayUsername:(NSString *)displayUsername accessToken:(NSString *)accessToken;
 
 /**
  Removes any user settings from User Defaults
+ 
+ @deprecated        Use `removeUserSettings` instead
  */
-- (void)clearUsernameAndAccessToken;
+- (void)clearUsernameAndAccessToken DEPRECATED_ATTRIBUTE;
+
+- (void)removeUserSettings;
 
 #if SNAPRKIT_FX
 
