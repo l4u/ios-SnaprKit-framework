@@ -80,13 +80,13 @@ The project supports FacebookSDK.framework v3.2.
 ### Facebook Integration Configuration
 In the app's main Info.plist, you will need to add two values which include the Facebook App ID.
 
-| Key | Type | Value |
-| --- | ---- | ------|
-| FacebookAppID | String | e.g. "151738444987320" |
-| URL Types | Array | URL Types Child Item |
-| URL Types Child Item | Dictionary | URL Schemes Child Array |
-| URL Schemes Child Array | Array | URL Scheme Child Item |
-| URL Scheme Child Item | String | "fb" + App ID, e.g fb151738444987320 |
+| Key                     | Type       | Value                                |  
+| ----------------------- | ---------- | ------------------------------------ |  
+| FacebookAppID           | String     | e.g. "151738444987320"               |  
+| URL Types               | Array      | URL Types Child Item                 |  
+| URL Types Child Item    | Dictionary | URL Schemes Child Array              |  
+| URL Schemes Child Array | Array      | URL Scheme Child Item                |  
+| URL Scheme Child Item   | String     | "fb" + App ID, e.g fb151738444987320 |  
 
 ![FacebookAppID Config](https://raw.github.com/snapr/ios-SnaprKit-framework/master/Screenshots/FacebookAppID.png)
 
@@ -127,17 +127,18 @@ If you have any links/javascript in your bundle that requests ```snaprkit-parent
 ## Configuration Options
 To customize the default behavior, create a file named `SnaprKit.plist` in your project, and override any of the below keys:
 
-| Key                           | Type         | Default            | Description
-|-------------------------------|--------------|--------------------| --------------------| 
-| DevMode                       | Boolean      | YES                | Dev or Live server |
-| DebugLogging                  | Boolean      | NO                 | Log activity to console |
-| ShowLoadingSpinner            | Boolean      | YES                | Initial loading spinner before HTML render |
-| CropImagesAspectRatio         | Number       | 0 = No Cropping    | 1 = Square; 0.75 = 4:3 |
-| JPEGQuality                   | Number       | 0.8                | Number between 0 and 1 |
-| MaximumDimensionOfImage       | Number       | 0 = No Resizing    | The size in pixels of the the larger of either the width or height |
-| IgnoreModalWebViewOnDomains   | Array        |                    | Assign an array of domain strings to whitelist to this property. |
-| BadgeApplicationIcon          | Boolean      | YES                | Show pending upload count as app badge |
-| ShowFiltersFirstInEffectsView | Boolean      | YES                | Show filters before stickers in effects view |
+| Key                           | Type    | Default         | Description  
+| ----------------------------- | ------- | --------------- | ------------------------------------------------------------------ |  
+| DevMode                       | Boolean | YES             | Dev or Live server                                                 |  
+| DebugLogging                  | Boolean | NO              | Log activity to console                                            |  
+| ShowLoadingSpinner            | Boolean | YES             | Initial loading spinner before HTML render                         |  
+| CropImagesAspectRatio         | Number  | 0 = No Cropping | 1 = Square; 0.75 = 4:3                                             |  
+| JPEGQuality                   | Number  | 0.8             | Number between 0 and 1                                             |  
+| MaximumDimensionOfImage       | Number  | 0 = No Resizing | The size in pixels of the the larger of either the width or height |  
+| IgnoreModalWebViewOnDomains   | Array   |                 | Assign an array of domain strings to whitelist to this property.   |  
+| BadgeApplicationIcon          | Boolean | YES             | Show pending upload count as app badge                             |  
+| ShowFiltersFirstInEffectsView | Boolean | YES             | Show filters before stickers in effects view                       |  
+| ClearFailedUploads			| Boolean | NO              | Whether to automatically clear failed uploads from the queue |
 
 ## Image Overrides
 Replace any of the images in `SnaprKitResources.bundle` with new files.
