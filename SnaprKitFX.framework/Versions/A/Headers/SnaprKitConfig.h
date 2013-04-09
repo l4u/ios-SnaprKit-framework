@@ -47,6 +47,10 @@ extern NSString * const SNInvalidConfigurationException;
  */
 - (void)clearUsernameAndAccessToken DEPRECATED_ATTRIBUTE;
 
+
+/**
+ Removes any user settings from User Defaults
+ */
 - (void)removeUserSettings;
 
 #if SNAPRKIT_FX
