@@ -14,6 +14,7 @@
 "DontSaveButtonTitle" = "Don’t Save";
 "OKButtonTitle" = "OK";
 "CancelButtonTitle" = "Cancel";
+"CloseButtonTitle" = "Close";
 
 "LocationServicesDisabled" = "Please turn on Location Services in the Settings app.";
 "LocationServicesDenied" = "Please turn on Location Services for this app in the Settings.";
