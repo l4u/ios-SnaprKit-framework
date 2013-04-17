@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
     'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SnaprKit"',
     'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"'
   }
-  s.frameworks  = 'SnaprKit', 'Foundation', 'UIKit', 'CFNetwork', 'SystemConfiguration', 'MobileCoreServices', 'CoreGraphics', 'ImageIO', 'AssetsLibrary', 'CoreLocation', 'Security'
+  s.frameworks  = 'SnaprKit', 'Foundation', 'UIKit', 'CFNetwork', 'SystemConfiguration', 'MobileCoreServices', 'CoreGraphics', 'ImageIO', 'AssetsLibrary', 'CoreLocation', 'Security', 'QuartzCore'
   s.libraries = 'z', 'xml2'
 end
