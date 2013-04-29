@@ -92,6 +92,14 @@ In the app's main Info.plist, you will need to add two values which include the 
 
 ![URL Types Config](https://raw.github.com/snapr/ios-SnaprKit-framework/master/Screenshots/URLTypes.png)
 
+## TestFlight SDK
+If the TestFlightSDK is specified in the Podfile, you will need to also update the App Token in `SnaprAppDelegate.m`. Once a build has been uploaded to Testflight, the App Token can be found at testflightapp.com under Apps > App Name > App Token.
+Update the line:
+
+```objc
+    [TestFlight takeOff:@"d750e02e-7c76-425e-8a00-ee83d993e219"];
+```
+
 ## Usage:
 Import the main header:
 ```#import <SnaprKit/SnaprKit.h>``` or ```#import <SnaprKitFX/SnaprKitFX.h>```
